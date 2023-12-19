@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://gzepeda09.github.io/portfolio",
+  "homepage": "https://gzepeda09.github.io/portfolio/src",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
