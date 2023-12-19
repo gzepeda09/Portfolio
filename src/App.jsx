@@ -1,7 +1,7 @@
 
 
 import Hero from './components/hero.jsx'
-
+import "./index.css"
 
 function App() {
   
