@@ -2,10 +2,10 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="bg-dark text-white py-20 md:py-40">
+    <section className="bg-black text-white py-20 md:py-40">
       <div className="container mx-auto flex flex-col items-center justify-center space-y-12 md:space-y-20">
         <h1 className="text-4xl font-bold text-center md:text-5xl">
-          Your Name - Portfolio
+         Geno Zepeda
         </h1>
         <p className="text-lg text-center md:text-xl">
           Crafting captivating experiences with code and design.
