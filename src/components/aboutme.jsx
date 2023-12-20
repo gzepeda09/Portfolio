@@ -45,16 +45,23 @@ const AboutMe = () => {
   }, [isInView]);
 
   return (
-    <div className={`transform transition-transform duration-500 ease-in-out ${isInView ? 'translate-x-0' : 'translate-x-full'}`}>
+    <div className={`transform transition-transform duration-500 ease-in-out ${isInView ? 'translate-x-10' : 'translate-x-full'}`}>
       <section className=" text-center py-20 sm:py-60 md:py-40 xl:py-60 ">
-        <div className="grid grid-cols-8 gap-4">
-          <img src="./assets/grad.jpg" alt="Your name" className="col-span-2 mx-auto w-32 h-32 rounded-full xl:w-48 xl:h-48 "/>
-          <h2 className="col-span-2 mt-6 text-3xl font-bold text-gray-900">
-            Your Name
-          </h2>
-          <p className="col-span-2 mt-3 max-w-2xl mx-auto text-xl text-gray-500">
-            Your about me text...
-          </p>
+        <div className="grid grid-rows-3 grid-flow-col">
+          <div className="row-span-3">
+            <img src="./src/assets/grad.jpg" alt="Your name" className="lg:py-40 xl:py-20  border-solid border-4 border-y-0 border-black w-80 h-70"/>
+          </div>
+
+          <div className="col-span-2 text-left mt-5">
+            <h2 className=" text-7xl font-bold text-white ">
+              About Me
+            </h2>
+          </div>
+
+            <div className="row-span-2 mt-3 text-left text-7x1">
+            <p className="text-white  "> Hello </p>
+            </div>
+   
         </div>
       </section>
     </div>
