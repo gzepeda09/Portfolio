@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section id='hero' className=" py-20 md:py-40">
+    <section id='hero' className=" py-20 md:py-40 sm:py-60">
       <div className="container mx-auto flex flex-col items-center justify-center space-y-12 md:space-y-20">
         <h1 className="text-4xl font-bold text-center md:text-5xl">
          Geno Zepeda

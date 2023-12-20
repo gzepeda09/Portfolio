@@ -45,20 +45,18 @@ const AboutMe = () => {
   }, [isInView]);
 
   return (
-    <div>
-      
-        
-        <section className="bg-white text-center py-20 md:py-40 lg:px-8">
-          <img src="path-to-your-image" alt="Your name" className="mx-auto w-32 h-32 rounded-full xl:w-48 xl:h-48"/>
-          <h2 className="mt-6 text-3xl font-bold text-gray-900">
+    <div className={`transform transition-transform duration-500 ease-in-out ${isInView ? 'translate-x-0' : 'translate-x-full'}`}>
+      <section className=" text-center py-20 sm:py-60 md:py-40 xl:py-60 ">
+        <div className="grid grid-cols-8 gap-4">
+          <img src="./assets/grad.jpg" alt="Your name" className="col-span-2 mx-auto w-32 h-32 rounded-full xl:w-48 xl:h-48 "/>
+          <h2 className="col-span-2 mt-6 text-3xl font-bold text-gray-900">
             Your Name
           </h2>
-          <p className="mt-3 max-w-2xl mx-auto text-xl text-gray-500">
+          <p className="col-span-2 mt-3 max-w-2xl mx-auto text-xl text-gray-500">
             Your about me text...
           </p>
-        </section>
-    
-
+        </div>
+      </section>
     </div>
   );
 };
