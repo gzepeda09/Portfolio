@@ -1,7 +1,8 @@
 
 
 import Hero from './components/hero.jsx'
-import "./index.css"
+import AboutMe from './components/aboutme.jsx'
+
 
 function App() {
   
@@ -10,6 +11,7 @@ function App() {
     <>
       <div>
         <Hero />
+        <AboutMe />
       </div>
 
     </>
