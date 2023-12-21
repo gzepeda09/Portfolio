@@ -22,8 +22,11 @@
 
 // export default AboutMe;
 import React, { useEffect, useState } from 'react';
-
+// this Grad is for github pages deployment
 import Grad from '/home/runner/work/portfolio/portfolio/public/assets/grad.jpg';
+
+//this Grad is for development
+// import Grad from '../../public/assets/grad.jpg';
 
 const AboutMe = () => {
   const [isInView, setIsInView] = useState(false);
@@ -47,11 +50,11 @@ const AboutMe = () => {
   }, [isInView]);
 
   return (
-    <div className={`transform transition-transform duration-500 ease-in-out ${isInView ? 'translate-x-10' : 'translate-x-full'}`}>
+    <div className={`transform transition-transform duration-500 ease-in-out ${isInView ? 'translate-x-12' : 'translate-x-full'}`}>
       <section className=" text-center py-20 sm:py-60 md:py-40 xl:py-60 ">
         <div className="grid grid-rows-3 grid-flow-col">
           <div className="row-span-3">
-            <img src={Grad} alt="Your name" className="lg:py-40 xl:py-20  border-solid border-4 border-y-0 border-black "/>
+            <img src={Grad} alt="Your name" className="lg:py-40 xl:py-20  border-solid border-4 border-y-0 border-black w-60 "/>
           </div>
 
           <div className="col-span-2 text-left mt-5">
