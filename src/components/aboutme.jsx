@@ -23,6 +23,8 @@
 // export default AboutMe;
 import React, { useEffect, useState } from 'react';
 
+import Grad from './public/assets/grad.jpg';
+
 const AboutMe = () => {
   const [isInView, setIsInView] = useState(false);
 
@@ -49,7 +51,7 @@ const AboutMe = () => {
       <section className=" text-center py-20 sm:py-60 md:py-40 xl:py-60 ">
         <div className="grid grid-rows-3 grid-flow-col">
           <div className="row-span-3">
-            <img src="./public/assets/grad.jpg" alt="Your name" className="lg:py-40 xl:py-20  border-solid border-4 border-y-0 border-black "/>
+            <img src={Grad} alt="Your name" className="lg:py-40 xl:py-20  border-solid border-4 border-y-0 border-black "/>
           </div>
 
           <div className="col-span-2 text-left mt-5">
