@@ -23,7 +23,7 @@
 // export default AboutMe;
 import React, { useEffect, useState } from 'react';
 
-import Grad from './public/assets/grad.jpg';
+import Grad from '/portfolio/public/assets/grad.jpg';
 
 const AboutMe = () => {
   const [isInView, setIsInView] = useState(false);
