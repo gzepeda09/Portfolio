@@ -34,7 +34,8 @@ const AboutMe = () => {
   const checkScroll = () => {
     const hero = document.getElementById('hero');
     const rect = hero.getBoundingClientRect();
-    const isInView = rect.bottom <= 0;
+    const isInView = rect.bottom  < 0;
+    console.log(isInView);
     setIsInView(isInView);
   };
 
@@ -50,27 +51,34 @@ const AboutMe = () => {
   }, [isInView]);
 
   return (
-    <div className={` ${isInView ? 'transform transition-transform duration-500 ease-in-out translate-x-12' : 'translate-x-full'} `}>
-      <section className=" text-center py-20 sm:py-60 md:py-40 xl:py-60 ">
+
+      <section className={`text-center px-8 md:py-4 xl:py-60`}>
+      <div className={`transition-opacity duration-1000 ${isInView ? 'opacity-100' : 'opacity-0'}`}>
         <div className="grid grid-rows-3 grid-flow-col">
           <div className="row-span-3">
-            <img src={Grad} alt="Your name" className="lg:py-40 xl:py-20  border-solid border-4 border-y-0 border-black w-60 sm:w-40 "/>
+            <img src={Grad} alt="Your name" className="  border-solid border-4 border-y-0 border-black w-48  lg:w-96 md:w-64 "/>
           </div>
 
-
-          <div className="col-span-2 text-left mt-5">
-            <h2 className=" text-7xl font-bold text-white ">
+          <div
+               className={`transition-transform duration-500 ease-in-out transform ${
+                 isInView ? 'translate-x-0' : 'translate-x-full'
+               }`}
+             >
+          <div className="col-span-2 text-left mt-5 ">
+            <h2 className=" text-7x1 md:text-3xl sm:text-2x1 font-bold text-white ">
               About Me
             </h2>
           </div>
 
             <div className="row-span-2 mt-3 text-left text-7x1">
-            <p className="text-white  "> Hello </p>
+            <p className="text-white  ">Hello </p>
             </div>
+          </div>
    
         </div>
+        </div>
       </section>
-    </div>
+
   );
 };
 
