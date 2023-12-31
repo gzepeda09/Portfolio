@@ -3,7 +3,7 @@ export default [
 		"name":"MealDB",
 		"key":"0",
 		"stack": ["MySQL", "HTML/CSS", "PHP", "JavaScript"],
-		"imgUrl" : "./public/assets/mealdb.jpg",
+		"imgUrl" : "/home/runner/work/portfolio/portfolio/public/assets/mealdb.jpg",
 		"link" : "https://artemis.cs.csub.edu/~gzepeda/mealdb/webapp/frontend/reg.php",
 
 	},
