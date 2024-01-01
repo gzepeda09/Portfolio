@@ -2,7 +2,11 @@
 export default {
   content: ["./src/**/*.{js,jsx,tsx}",],
   theme: {
-    extend: {},
+    extend: {
+      transitionDuration: {
+              '2000': '2000ms',
+      }
+    },
   },
   plugins: [],
 }

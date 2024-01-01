@@ -7,7 +7,7 @@ const projectsinfo = ({name, stack, imgUrl, link, key}) => {
 
 
 
-	<a href={link} target="_blank" className="border-2 border-red-950 rounded-md overflow-hidden">
+	<a href={link} target="_blank" className="border-2 hover:border-4 hover:border-orange-500 border-red-950  rounded-md overflow-hidden">
 	
 	<div >
 		<img
