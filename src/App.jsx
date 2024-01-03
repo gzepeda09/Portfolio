@@ -1,9 +1,8 @@
-
-
 import Hero from './components/hero.jsx'
 import AboutMe from './components/aboutme.jsx'
 import Projects from './components/projects.jsx'
 import Skills from './components/skills.jsx'
+import Nav from './components/navbar.jsx'
 
 
 function App() {
@@ -12,6 +11,8 @@ function App() {
   return (
     <>
       <div>
+        
+        <Nav />
         
         <section id='hero' className=" py-20 md:py-40 sm:py-60">
         <Hero />
