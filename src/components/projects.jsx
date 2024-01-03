@@ -1,4 +1,4 @@
-import Proj from "../projects.js";
+import Proj from "../data/projects.js";
 import ProjectInfo from "./projectsinfo.jsx";
 import Scroll from './scrollsection.jsx';
 import React from 'react'

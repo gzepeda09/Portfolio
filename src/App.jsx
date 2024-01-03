@@ -3,6 +3,7 @@
 import Hero from './components/hero.jsx'
 import AboutMe from './components/aboutme.jsx'
 import Projects from './components/projects.jsx'
+import Skills from './components/skills.jsx'
 
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
 
         <section id='project' className="text-center py-80  ">
         <Projects />
+        </section>
+
+        <section id='skills' className="bg-red-950 text-center py-80  ">
+        <Skills />
         </section>
       </div>
 

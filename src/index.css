@@ -5,4 +5,5 @@
 
 body {
   @apply bg-black text-white;
+  font-family: 'Raleway';
 }

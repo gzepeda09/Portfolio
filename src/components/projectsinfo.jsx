@@ -18,9 +18,9 @@ const projectsinfo = ({name, stack, imgUrl, link, key}) => {
 		</div>
 
 		<div>
-			
-			<h3> {name} </h3>
-			
+			<div className="border-b-2 ">
+				<h3 className="font-bold uppercase text-2xl tracking-widest"> {name} </h3>
+			</div>
 
 			<div className="w-full p-4">
 
