@@ -9,7 +9,7 @@ const NavScroll = ({sectionID, changeActive}) => {
 	    const section = document.getElementById(sectionID);
 
 	    const rect = section.getBoundingClientRect();
-	    const isInView = rect.bottom > 0 && rect.top < 2;
+	    const isInView = rect.bottom > 0 && rect.top < 1;
 	    // console.log(isInView);
 	    setIsInView(isInView);
   };

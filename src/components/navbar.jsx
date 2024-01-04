@@ -11,6 +11,7 @@ const Navbar = () => {
 	const [isAActive, setIsAActive] = useState(false);
 	const [isPActive, setIsPActive] = useState(false);
 	const [isSActive, setIsSActive] = useState(false);
+	const [isEActive, setIsEActive] = useState(false);
 	
 
 	const handleActive = ({value}) => {
@@ -24,6 +25,9 @@ const Navbar = () => {
 	}
 	const handleSActive = ({value}) => {
 		setIsSActive(value);
+	}
+	const handleEActive = ({value}) => {
+		setIsEActive(value);
 	}
 
 
@@ -44,27 +48,36 @@ const Navbar = () => {
 				<AnchorLink href="#hero"> 
 				<NavScroll sectionID='hero' changeActive={handleActive} />
 					<button className={`rounded-full mx-3 md:mx-10 ${
-                isActive ? 'bg-red-950 w-24 md:w-48 text-lg md:text-3xl' : 'inactive-style'}`} > Name </button>
+                isActive ? 'bg-red-950 w-24 md:w-48 text-lg md:text-3xl' : 'hover:md:text-4xl'}`} > Name </button>
 					
 				</AnchorLink>
 				<AnchorLink href="#about"> 
 				<NavScroll sectionID='about' changeActive={handleAActive} />
 					<button className={`rounded-full mx-3 md:mx-10 ${
-                isAActive ? 'bg-black w-28 md:w-48 text-lg md:text-3xl' : 'inactive-style'}`} > About Me </button>
+                isAActive ? 'bg-black w-28 md:w-48 text-lg md:text-3xl' : 'hover:md:text-4xl'}`} > About Me </button>
 					
 				</AnchorLink>
 				<AnchorLink href="#project"> 
 				<NavScroll sectionID='project' changeActive={handlePActive} />
 					<button className={`rounded-full mx-3 md:mx-10 ${
-                isPActive ? 'bg-red-950 w-24 md:w-48 text-lg md:text-3xl' : 'inactive-style'}`} > Projects </button>
+                isPActive ? 'bg-red-950 w-24 md:w-48 text-lg md:text-3xl' : 'hover:md:text-4xl'}`} > Projects </button>
 					
 				</AnchorLink>
+				
 				<AnchorLink href="#skills"> 
 				<NavScroll sectionID='skills' changeActive={handleSActive} />
 					<button className={`rounded-full mx-3 md:mx-10 ${
-                isSActive ? 'bg-black w-24 md:w-48 text-lg md:text-3xl' : 'inactive-style'}`} > Skills </button>
+                isSActive ? 'bg-black w-24 md:w-48 text-lg md:text-3xl' : 'hover:md:text-4xl'}`} > Skills </button>
 					
 				</AnchorLink>
+
+				<AnchorLink href="#experience"> 
+				<NavScroll sectionID='experience' changeActive={handleEActive} />
+					<button className={`rounded-full mx-3 md:mx-10 ${
+                isEActive ? 'bg-red-950 w-24 md:w-56 text-lg md:text-3xl' : 'hover:md:text-4xl'}`} > Experience </button>
+					
+				</AnchorLink>
+	
 	
 			  </div>
 			</nav>

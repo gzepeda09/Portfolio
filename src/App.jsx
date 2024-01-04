@@ -3,6 +3,7 @@ import AboutMe from './components/aboutme.jsx'
 import Projects from './components/projects.jsx'
 import Skills from './components/skills.jsx'
 import Nav from './components/navbar.jsx'
+import Experience from './components/experience.jsx'
 
 
 function App() {
@@ -29,6 +30,12 @@ function App() {
         <section id='skills' className="bg-red-950 text-center py-80  ">
         <Skills />
         </section>
+
+
+        <section id='experience' className="text-center py-80  ">
+        <Experience />
+        </section>
+
       </div>
 
     </>
