@@ -4,6 +4,7 @@ import Projects from './components/projects.jsx'
 import Skills from './components/skills.jsx'
 import Nav from './components/navbar.jsx'
 import Experience from './components/experience.jsx'
+import Contact from './components/contact.jsx'
 
 
 function App() {
@@ -34,6 +35,11 @@ function App() {
 
         <section id='experience' className="text-center py-80  ">
         <Experience />
+        </section>
+
+
+        <section id='contact' className="bg-red-950 text-center py-80  ">
+        <Contact />
         </section>
 
       </div>
