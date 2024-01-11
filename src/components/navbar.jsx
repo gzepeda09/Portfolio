@@ -36,7 +36,7 @@ const Navbar = () => {
 		setIsEActive(value);
 	}
 	const handleCActive = ({value}) => {
-		setIsEActive(value);
+		setIsCActive(value);
 	}
 
 	console.log(screenSize.width)
@@ -97,7 +97,7 @@ const Navbar = () => {
 					<AnchorLink href="#contact"> 
 					<NavScroll sectionID='contact' changeActive={handleCActive} />
 						<button className={`rounded-full mx-1 mt-2 md:mx-10 ${
-	                isCActive ? 'bg-red-950 w-24 md:w-56 text-md md:text-3xl' : 'hover:md:text-4xl'}`} > Contact </button>
+	                isCActive ? 'bg-black w-24 md:w-56 text-md md:text-3xl' : 'hover:md:text-4xl'}`} > Contact </button>
 						
 					</AnchorLink>
 					</div>
