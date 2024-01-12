@@ -62,14 +62,19 @@ const AboutMe = ({isinView}) => {
             <img src={Grad} alt="Your name" className="  border-solid border-4 border-y-0 border-black w-48  lg:w-96 md:w-64 "/>
           </div>
 
-          <div className="col-span-2 text-left mt-5 ">
-            <h2 className=" text-7x1 md:text-3xl sm:text-2x1 font-bold text-white ">
+          <div className="col-span-2 text-left ml-3 md:mt-5 sm:ml-5 ">
+            <h2 className=" text-md md:text-3xl  font-bold text-white ">
               About Me
             </h2>
           </div>
 
-            <div className="row-span-2 mt-3 text-left text-7x1">
-            <p className="text-white  ">Hello </p>
+            <div className="row-span-2 ml-3 md:mt-3  text-left">
+            <p className="text-white  text-xs md:text-2xl md:w-96">
+                    I am 25 years old and was born and raised in California. 
+                    I attended CSU, Bakersfield where I earned a B.S. in Computer Science. 
+                    I am now attending San Jose State where I am pursuing my M.S. in Software Engineering.
+                    My goal is to become a Software Engineering where I can develop software that can be used for real world problems.
+            </p>
             </div>
          
         </div>

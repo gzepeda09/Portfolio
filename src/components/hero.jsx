@@ -8,17 +8,21 @@ const Hero = () => {
          Geno Zepeda
         </h1>
         <p className="text-lg text-center md:text-xl">
-          Crafting captivating experiences with code and design.
+          B.S. Computer Science
+         
+        </p>
+        <p> 
+           M.S. Software Engineering (in progress)
         </p>
         <div className="flex justify-center gap-4">
           <a
-            href="your-projects-page"
+            href="#project"
             className="px-4 py-2 rounded-md bg-gray-800 hover:bg-gray-700"
           >
             See My Projects
           </a>
           <a
-            href="your-contact-page"
+            href="#contact"
             className="px-4 py-2 rounded-md bg-gray-800 hover:bg-gray-700 "
           >
             Get in Touch

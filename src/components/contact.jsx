@@ -5,7 +5,7 @@ import { useForm, ValidationError } from '@formspree/react';
 const Contact = () => {
 	const [state, handleSubmit] = useForm("xwkgppqp");
 	if (state.succeeded) {
-	    return <p>Thanks for joining!</p>;
+	    return <p className="text-2xl md:text-7xl md:mt-52">Message Sent successfully!</p>;
 	}
 
 	return (
@@ -24,7 +24,7 @@ const Contact = () => {
 					    id="email"
 					    type="email" 
 					    name="email"
-					    className="text-black text-lg font-semibold "
+					    className="border-2 border-solid border-black rounded-md text-black text-md md:text-lg font-semibold "
 					  />
 					  <ValidationError 
 					    prefix="Email" 
@@ -38,7 +38,7 @@ const Contact = () => {
 					  <textarea
 					    id="message"
 					    name="message"
-					    className="w-96 text-black font-bold text-lg md:text-xl"
+					    className="border-2 border-solid border-black rounded-md md:w-96 text-black font-bold text-md md:text-xl"
 					  />
 					  <ValidationError 
 					    prefix="Message" 
@@ -48,7 +48,7 @@ const Contact = () => {
 				  </div>
 
 				  <div className="mt-5">
-					  <button type="submit" disabled={state.submitting} className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">
+					  <button type="submit" disabled={state.submitting} className="w-48 border-2 border-solid border-black rounded-md hover:bg-black">
 					    Submit
 					  </button>
 				  </div>
