@@ -72,8 +72,8 @@ const AboutMe = ({isinView}) => {
             <p className="text-white  text-xs md:text-2xl md:w-96">
                     I am 25 years old and was born and raised in California. 
                     I attended CSU, Bakersfield where I earned a B.S. in Computer Science. 
-                    I am now attending San Jose State where I am pursuing my M.S. in Software Engineer.
-                    My goal is to become a Software Engineering where I can develop software that can be used for real world problems.
+                    I am now attending San Jose State where I am pursuing my M.S. in Software Engineering.
+                    My goal is to become a Software Engineer where I can develop software that can be used for real world problems.
             </p>
             </div>
          
